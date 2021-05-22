@@ -1,0 +1,62 @@
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	gap: 0px 0px;
+	grid-template-areas:
+	  "Box1 Box2"
+      "Box3 Box4"
+  }
+
+.cover {
+    display: grid;
+    background-image: url('./images/polka-dots.jpeg');
+    /* position: absolute; */
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+}
+
+.duck { 
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-area: Box1;
+    z-index: -1;
+}
+    
+.cow { 
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-area: Box2; 
+    z-index: -1;
+}
+
+.pig { 
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-area: Box3;
+    z-index: -1; 
+}
+        
+.dog { 
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-area: Box4; 
+    z-index: -1;
+}
+
+ .uncover {
+    display: grid;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+} 
